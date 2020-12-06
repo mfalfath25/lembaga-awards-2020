@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mukta+Vaani:wght@200;300;400;500;600;700;800&display=swap');
+
+$mobile : 768px;
+
+.wrapper {
+    box-sizing: border-box !important;
+    min-height: 100px !important;
+    max-width: 75vw !important;
+    .dokum {
+        position: relative;
+        display: flex;
+        align-items: center;
+        .ikonKanan {
+            color: yellow;
+            position: absolute;
+            right: 5px;
+            top: 50%;
+            z-index: 10;
+            :hover{
+                cursor: pointer;
+            }
+        }
+        .ikonKiri {
+            color: yellow;
+            position: absolute;
+            left: 5px;
+            top: 50%;
+            z-index: 10;
+            :hover{
+                cursor: pointer;
+            }
+        }
+        .car {
+            z-index: 5;
+            width: 250px;
+            height: 250px;
+
+            .img {
+                position: relative;
+                display: flex;
+                align-items: center;
+                width: 100% !important;
+                height: 100% !important;
+                // max-width: auto !important;
+                // height: auto !important; 
+            }
+        }
+    }
+}
+
+.wrapper2 {
+    box-sizing: border-box !important;
+    width: 600px;
+    display: flex;
+    gap: 20px;
+    .imgCover {
+        position: relative;
+        display: flex;
+        align-self: center;
+        .img {
+            padding: 10px;
+            width: 100% !important;
+            height: 100% !important;
+        }
+    }
+
+    .deskripsi {
+        width: auto;
+        flex: 1;
+        h2 {
+            text-align: center;
+        }
+        .podcastDesc {
+            p {
+                text-align: justify;
+            }
+        }
+        p {
+            contain: content;
+            text-align: start;
+        }
+    }
+    @media screen and (max-width: $mobile) {
+        flex-direction: column;
+        max-width: 90vw;
+    }
+}
+
+.wrapper3 {
+    box-sizing: border-box !important;
+    width: 800px;
+    display: flex;
+    gap: 20px;
+    .proker{
+        flex: 1;
+        .desc {
+            text-align: justify;
+        }
+    }
+    .dokum {
+        position: relative;
+        display: flex;
+        align-items: center;
+        @media screen and (max-width: $mobile) {
+            margin: 0 auto;
+        }
+        .ikonKanan {
+            color: yellow;
+            position: absolute;
+            right: 5px;
+            top: 50%;
+            z-index: 10;
+            :hover{
+                cursor: pointer;
+            }
+        }
+        .ikonKiri {
+            color: yellow;
+            position: absolute;
+            left: 5px;
+            top: 50%;
+            z-index: 10;
+            :hover{
+                cursor: pointer;
+            }
+        }
+        .car {
+            z-index: 5;
+            width: 250px;
+            height: 250px;
+            .img {
+                width: 100% !important;
+                height: 100% !important;
+                // max-width: auto !important;
+                // height: auto !important; 
+            }
+        }
+    }
+    @media screen and (max-width: $mobile) {
+        flex-direction: column;
+        max-width: 90vw;
+    }
+}
+
+.wrapper4 {
+    .deskripsi {
+        h3 {
+            padding: 0;
+            margin: 0;
+        }
+    }
+}
